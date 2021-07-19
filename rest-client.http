@@ -1,0 +1,23 @@
+@host = localhost:7071
+
+### GET
+GET http://{{host}}/api/temp
+
+### GET
+GET http://{{host}}/api/temp?id=4
+
+### GET
+GET http://{{host}}/api/temp?name=myIoT1
+
+### GET
+GET http://{{host}}/api/temp/name/400
+
+### POST
+POST http://{{host}}/api/temp
+
+{"name":"myIoT1","temp":15.9,"hasSmoke":true,"hasSwitchOn":false}
+
+### POST
+POST http://{{host}}/api/temp
+
+{"name":"myIoT2","temp":12.5,"hasSmoke":false,"hasSwitchOn":true}
